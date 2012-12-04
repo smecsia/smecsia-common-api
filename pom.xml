@@ -4,7 +4,7 @@
 
     <groupId>me.smecsia.common</groupId>
     <artifactId>smecsia-common-api</artifactId>
-    <version>0.3-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
 
     <scm>
         <connection>scm:git:git@github.com:smecsia/smecsia-common-api.git</connection>
