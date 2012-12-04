@@ -8,6 +8,13 @@
     <artifactId>smecsia-common-api</artifactId>
     <version>0.1-SNAPSHOT</version>
 
+    <scm>
+        <connection>scm:git:git@github.com:smecsia/smecsia-common-api.git</connection>
+        <developerConnection>scm:git:git@github.com:smecsia/smecsia-common-api.git</developerConnection>
+        <url>scm:git:git@github.com:smecsia/smecsia-common-api.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
