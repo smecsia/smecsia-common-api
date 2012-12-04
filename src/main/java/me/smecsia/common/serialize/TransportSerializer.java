@@ -18,14 +18,14 @@ public interface TransportSerializer<ST,DT extends TransportObject> {
     void registerPreProcessor(SerializePreProcessor processor);
 
     @SuppressWarnings("unchecked")
-    <DT> DT deserialize(Class<DT> clazz, ST object);
+    DT deserialize(Class<DT> clazz, ST object);
 
     @SuppressWarnings("unchecked")
-    <DT> ST deserialize(DT instance, ST object);
+    ST deserialize(DT instance, ST object);
 
     @SuppressWarnings("unchecked")
-    <DT> Object serialize(ST instance);
+    Object serialize(ST instance);
 
-    <DT> Map<String, String[]> getFieldsOptions(Class<DT> clazz);
+    Map<String, String[]> getFieldsOptions(Class<DT> clazz);
 
 }
