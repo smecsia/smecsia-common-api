@@ -1,8 +1,5 @@
 package me.smecsia.common.serialize;
 
-import com.smartfoxserver.v2.entities.data.ISFSObject;
-import me.smecsia.smartfox.tools.common.TransportObject;
-
 import java.util.Map;
 
 /**
@@ -21,13 +18,13 @@ public interface TransportSerializer {
     void registerPreProcessor(SerializePreProcessor processor);
 
     @SuppressWarnings("unchecked")
-    <T extends TransportObject> T deserialize(Class<T> clazz, ISFSObject object);
+    <T extends TransportObject> T deserialize(Class<T> clazz, Object object);
 
     @SuppressWarnings("unchecked")
-    <T extends TransportObject> T deserialize(T instance, ISFSObject object);
+    <T extends TransportObject> T deserialize(T instance, Object object);
 
     @SuppressWarnings("unchecked")
-    <T extends TransportObject> ISFSObject serialize(T instance);
+    <T extends TransportObject> Object serialize(T instance);
 
     <T extends TransportObject> Map<String, String[]> getFieldsOptions(Class<T> clazz);
 

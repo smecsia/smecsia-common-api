@@ -1,7 +1,5 @@
 package me.smecsia.common.serialize;
 
-import me.smecsia.smartfox.tools.common.TransportObject;
-
 /**
  * Copyright (c) 2012 i-Free. All Rights Reserved.
  *
