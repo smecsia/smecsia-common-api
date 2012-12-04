@@ -18,10 +18,10 @@ public interface TransportSerializer<ST> {
     void registerPreProcessor(SerializePreProcessor processor);
 
     @SuppressWarnings("unchecked")
-    <DT extends TransportObject> deserialize(Class<DT> clazz, ST object);
+    <DT extends TransportObject> DT deserialize(Class<DT> clazz, ST object);
 
     @SuppressWarnings("unchecked")
-    <DT extends TransportObject> ST deserialize(DT instance, ST object);
+    <DT extends TransportObject> DT deserialize(DT instance, ST object);
 
     @SuppressWarnings("unchecked")
     Object serialize(ST instance);
