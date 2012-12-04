@@ -4,13 +4,13 @@
 
     <groupId>me.smecsia.common</groupId>
     <artifactId>smecsia-common-api</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.2</version>
 
     <scm>
         <connection>scm:git:git@github.com:smecsia/smecsia-common-api.git</connection>
         <developerConnection>scm:git:git@github.com:smecsia/smecsia-common-api.git</developerConnection>
         <url>scm:git:git@github.com:smecsia/smecsia-common-api.git</url>
-        <tag>HEAD</tag>
+        <tag>smecsia-common-api-0.2</tag>
     </scm>
 
     <build>
