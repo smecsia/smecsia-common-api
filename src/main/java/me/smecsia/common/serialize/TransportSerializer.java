@@ -24,7 +24,7 @@ public interface TransportSerializer<ST> {
     <DT extends TransportObject> DT deserialize(DT instance, ST object);
 
     @SuppressWarnings("unchecked")
-    ST serialize(ST instance);
+    <DT extends TransportObject> ST serialize(DT instance);
 
     <DT extends TransportObject> Map<String, String[]> getFieldsOptions(Class<DT> clazz);
 
