@@ -7,6 +7,6 @@ package me.smecsia.common.serialize;
  *         Date: 16.11.12
  *         Time: 1:18
  */
-public interface SerializePreProcessor {
-    public <T extends TransportObject> void process(final T sourceObject);
+public interface SerializePreProcessor<DT extends TransportObject> {
+    public <DT> void process(final DT sourceObject);
 }

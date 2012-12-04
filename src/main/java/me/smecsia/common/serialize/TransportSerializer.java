@@ -9,7 +9,7 @@ import java.util.Map;
  *         Date: 04.12.12
  *         Time: 11:40
  */
-public interface TransportSerializer {
+public interface TransportSerializer<ST,DT extends TransportObject> {
 
     void registerProcessor(SerializeProcessor processor);
 
@@ -18,14 +18,14 @@ public interface TransportSerializer {
     void registerPreProcessor(SerializePreProcessor processor);
 
     @SuppressWarnings("unchecked")
-    <T extends TransportObject> T deserialize(Class<T> clazz, Object object);
+    <DT> DT deserialize(Class<DT> clazz, ST object);
 
     @SuppressWarnings("unchecked")
-    <T extends TransportObject> T deserialize(T instance, Object object);
+    <DT> ST deserialize(DT instance, ST object);
 
     @SuppressWarnings("unchecked")
-    <T extends TransportObject> Object serialize(T instance);
+    <DT> Object serialize(ST instance);
 
-    <T extends TransportObject> Map<String, String[]> getFieldsOptions(Class<T> clazz);
+    <DT> Map<String, String[]> getFieldsOptions(Class<DT> clazz);
 
 }
