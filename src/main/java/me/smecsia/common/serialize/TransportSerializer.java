@@ -3,8 +3,6 @@ package me.smecsia.common.serialize;
 import java.util.Map;
 
 /**
- * Copyright (c) 2012 i-Free. All Rights Reserved.
- *
  * @author Ilya Sadykov
  *         Date: 04.12.12
  *         Time: 11:40
